@@ -68,7 +68,7 @@
             height: auto;
             display: block;
             margin: 20px auto;
-            animation: moveSide 2s infinite alternate; /* Mantener la animación */
+            animation: moveSide 2s infinite alternate;
         }
 
         @keyframes moveSide {
@@ -102,6 +102,48 @@
             bottom: 20px;
             right: 20px;
         }
+
+        /* Media Queries para dispositivos móviles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px; /* Ajusta el tamaño del título */
+            }
+            .message {
+                font-size: 18px; /* Ajusta el tamaño del mensaje */
+                padding: 12px;
+            }
+            .button {
+                font-size: 16px; /* Ajusta el tamaño de los botones */
+                padding: 10px 20px;
+            }
+            .logo {
+                width: 150px; /* Ajusta el tamaño de la imagen del logo */
+            }
+            .decor {
+                width: 60px; /* Ajusta el tamaño de las decoraciones */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 30px; /* Más pequeño en pantallas muy pequeñas */
+            }
+            .message {
+                font-size: 16px; /* Más pequeño en pantallas muy pequeñas */
+                padding: 10px;
+            }
+            .button {
+                font-size: 14px; /* Más pequeño en pantallas muy pequeñas */
+                padding: 8px 18px;
+            }
+            .logo {
+                width: 120px; /* Ajusta aún más el tamaño de la imagen */
+            }
+            .decor {
+                width: 50px; /* Ajusta aún más el tamaño de las decoraciones */
+            }
+        }
+
     </style>
 </head>
 <body>
