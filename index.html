@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AIMARI</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap');
+
         body {
-            font-family: 'Times New Roman', serif;
+            font-family: 'Playfair Display', serif;
             text-align: center;
             background-color: #fef6f8;
             padding: 50px;
@@ -17,30 +19,40 @@
         }
         h1 {
             color: #e91e63;
-            font-family: 'Times New Roman', serif;
+            font-family: 'Great Vibes', cursive;
+            font-size: 48px;
+            margin-bottom: 10px;
         }
         .message {
-            font-size: 18px;
+            font-size: 20px;
             color: #d81b60;
             margin-top: 20px;
             font-weight: bold;
+            font-style: italic;
+            background: rgba(255, 192, 203, 0.2);
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
         }
         .button-container {
-            margin-top: 20px;
+            margin-top: 30px;
         }
         .button {
             background-color: #e91e63;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 25px;
             border: none;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 18px;
             margin: 10px;
-            border-radius: 5px;
-            font-family: 'Times New Roman', serif;
+            border-radius: 30px;
+            font-family: 'Playfair Display', serif;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, background-color 0.3s ease;
         }
         .button:hover {
             background-color: #d81b60;
+            transform: scale(1.1);
         }
         .logo {
             width: 150px;
@@ -49,11 +61,38 @@
         }
         @keyframes moveSide {
             0% { transform: translateX(0); }
-            100% { transform: translateX(20px); }
+            100% { transform: translateX(10px); }
+        }
+        /* Decoración adicional */
+        .decor {
+            position: absolute;
+            width: 60px;
+        }
+        .decor-top-left {
+            top: 10px;
+            left: 10px;
+        }
+        .decor-top-right {
+            top: 10px;
+            right: 10px;
+        }
+        .decor-bottom-left {
+            bottom: 10px;
+            left: 10px;
+        }
+        .decor-bottom-right {
+            bottom: 10px;
+            right: 10px;
         }
     </style>
 </head>
 <body>
+    <!-- Elementos decorativos -->
+    <img src="decoracion1.png" class="decor decor-top-left" alt="Decoración">
+    <img src="decoracion2.png" class="decor decor-top-right" alt="Decoración">
+    <img src="decoracion3.png" class="decor decor-bottom-left" alt="Decoración">
+    <img src="decoracion4.png" class="decor decor-bottom-right" alt="Decoración">
+
     <h1>AIMARI</h1>
     <img src="torta-aimari.png" alt="Torta AIMARI" class="logo">
 
