@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIMARI</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            text-align: center;
+            background-color: #fef6f8;
+            padding: 50px;
+            background-image: url('aimari_postres.jpg'), url('aimari_detalles.jpg');
+            background-position: left center, right center;
+            background-repeat: no-repeat, no-repeat;
+            background-size: 20% auto, 20% auto;
+        }
+        h1 {
+            color: #e91e63;
+            font-family: 'Times New Roman', serif;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .button {
+            background-color: #e91e63;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+            border-radius: 5px;
+            font-family: 'Times New Roman', serif;
+        }
+        .button:hover {
+            background-color: #d81b60;
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+            animation: moveSide 2s infinite alternate;
+        }
+        @keyframes moveSide {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(20px); }
+        }
+    </style>
+</head>
+<body>
+    <h1>AIMARI</h1>
+    <img src="image.png" alt="Torta AIMARI" class="logo">
+    <div class="button-container">
+        <button class="button" onclick="location.href='aimari_postres.html'">AIMARI POSTRES</button>
+        <button class="button" onclick="location.href='aimari_details.html'">AIMARI DETAILS</button>
+    </div>
+</body>
+</html>
