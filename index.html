@@ -68,6 +68,12 @@
             height: auto;
             display: block;
             margin: 20px auto;
+            animation: moveSide 2s infinite alternate; /* Mantener la animación */
+        }
+
+        @keyframes moveSide {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(20px); }
         }
 
         /* Decoraciones en las esquinas */
