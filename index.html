@@ -50,10 +50,42 @@
 <body>
     <h1>AIMARI</h1>
     <img src="torta-aimari.png" alt="Torta AIMARI" class="logo">
-    <div class="button-container">
-        <!-- Enlace corregido para GitHub Pages -->
+    
+    <!-- Página Principal -->
+    <div class="button-container" id="mainPage">
         <button class="button" onclick="location.href='https://aimari-web.github.io/aimari-postres.github.io/'">AIMARI POSTRES</button>
         <button class="button" onclick="location.href='https://aimari-web.github.io/aimari-details.github.io/'">AIMARI DETAILS</button>
     </div>
+
+    <!-- AIMARI POSTRES (con botón volver) -->
+    <div class="button-container hidden" id="aimariPostresPage">
+        <button class="button" onclick="location.href='https://aimari-web.github.io/aimari-postres.github.io/'">Volver a AIMARI</button>
+        <button class="button" onclick="location.href='https://aimari-web.github.io/aimari-details.github.io/'">AIMARI DETAILS</button>
+    </div>
+
+    <!-- AIMARI DETAILS (con botón volver) -->
+    <div class="button-container hidden" id="aimariDetailsPage">
+        <button class="button" onclick="location.href='https://aimari-web.github.io/aimari-postres.github.io/'">Volver a AIMARI</button>
+        <button class="button" onclick="location.href='https://aimari-web.github.io/aimari-details.github.io/'">AIMARI POSTRES</button>
+    </div>
+
+    <script>
+        // Funciones para cambiar entre las páginas
+        function mostrarPagina(page) {
+            document.getElementById('mainPage').classList.add('hidden');
+            document.getElementById('aimariPostresPage').classList.add('hidden');
+            document.getElementById('aimariDetailsPage').classList.add('hidden');
+            document.getElementById(page).classList.remove('hidden');
+        }
+
+        // Event listeners para mostrar cada sección cuando se haga clic en los botones
+        document.querySelector('.button[onclick="location.href=\'https://aimari-web.github.io/aimari-postres.github.io/\'"]').addEventListener('click', function() {
+            mostrarPagina('aimariPostresPage');
+        });
+
+        document.querySelector('.button[onclick="location.href=\'https://aimari-web.github.io/aimari-details.github.io/\'"]').addEventListener('click', function() {
+            mostrarPagina('aimariDetailsPage');
+        });
+    </script>
 </body>
 </html>
