@@ -17,7 +17,6 @@
             background-repeat: no-repeat, no-repeat;
             background-size: 20% auto, 20% auto;
             position: relative;
-            overflow: hidden; /* Para asegurar que las rosas no se desborden */
         }
 
         h1 {
@@ -69,7 +68,7 @@
             height: auto;
             display: block;
             margin: 20px auto;
-            animation: moveSide 2s infinite alternate;
+            animation: moveSide 2s infinite alternate; /* Mantener la animación */
         }
 
         @keyframes moveSide {
@@ -103,62 +102,9 @@
             bottom: 20px;
             right: 20px;
         }
-
-        /* Efecto de rosas flotando rojas usando una imagen */
-        .rose {
-            position: absolute;
-            top: -50px;
-            width: 50px; /* Ajusta el tamaño de la rosa */
-            height: 50px;
-            background-image: url('rosa.jpg'); /* Aquí debes poner la URL de tu imagen de rosa roja */
-            background-size: contain;
-            background-repeat: no-repeat;
-            animation: floatRose 5s infinite ease-in-out;
-        }
-
-        @keyframes floatRose {
-            0% { top: -50px; opacity: 0.9; transform: scale(0.5); }
-            50% { top: 50vh; opacity: 1; transform: scale(1); }
-            100% { top: 100vh; opacity: 0.9; transform: scale(0.5); }
-        }
-
-        /* Añadir posiciones aleatorias para las rosas */
-        .rose:nth-child(odd) {
-            animation-duration: 6s;
-            animation-delay: 2s;
-        }
-        .rose:nth-child(even) {
-            animation-duration: 7s;
-            animation-delay: 3s;
-        }
-
-        /* Posiciones horizontales aleatorias */
-        .rose:nth-child(odd) {
-            left: 10%;
-        }
-        .rose:nth-child(even) {
-            left: 40%;
-        }
-        .rose:nth-child(3) {
-            left: 70%;
-        }
-        .rose:nth-child(4) {
-            left: 90%;
-        }
     </style>
 </head>
 <body>
-    <!-- Contenedor de rosas flotantes rojas -->
-    <div class="rose" style="left: 10%; animation-delay: 0s;"></div>
-    <div class="rose" style="left: 20%; animation-delay: 0.5s;"></div>
-    <div class="rose" style="left: 30%; animation-delay: 1s;"></div>
-    <div class="rose" style="left: 40%; animation-delay: 1.5s;"></div>
-    <div class="rose" style="left: 50%; animation-delay: 2s;"></div>
-    <div class="rose" style="left: 60%; animation-delay: 2.5s;"></div>
-    <div class="rose" style="left: 70%; animation-delay: 3s;"></div>
-    <div class="rose" style="left: 80%; animation-delay: 3.5s;"></div>
-    <div class="rose" style="left: 90%; animation-delay: 4s;"></div>
-
     <!-- Elementos decorativos -->
     <img src="decoracion.png" class="decor decor-top-left" alt="Decoración">
     <img src="decoracion.png" class="decor decor-top-right" alt="Decoración">
