@@ -17,6 +17,7 @@
             background-repeat: no-repeat, no-repeat;
             background-size: 20% auto, 20% auto;
             position: relative;
+            box-sizing: border-box;
         }
 
         h1 {
@@ -42,6 +43,10 @@
 
         .button-container {
             margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
         }
 
         .button {
@@ -68,7 +73,7 @@
             height: auto;
             display: block;
             margin: 20px auto;
-            animation: moveSide 2s infinite alternate; /* Mantener la animación */
+            animation: moveSide 2s infinite alternate;
         }
 
         @keyframes moveSide {
@@ -101,6 +106,68 @@
         .decor-bottom-right {
             bottom: 20px;
             right: 20px;
+        }
+
+        /* Media query para pantallas más pequeñas */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+                background-size: 30% auto, 30% auto;
+            }
+
+            h1 {
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+
+            .message {
+                font-size: 16px;
+                padding: 10px;
+            }
+
+            .button {
+                font-size: 16px;
+                padding: 10px 20px;
+            }
+
+            .logo {
+                width: 150px;
+            }
+
+            .decor {
+                width: 60px;
+            }
+
+            .button-container {
+                margin-top: 20px;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        /* Media query para pantallas pequeñas (móviles) */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            .message {
+                font-size: 14px;
+                padding: 8px;
+            }
+
+            .button {
+                font-size: 14px;
+                padding: 8px 15px;
+            }
+
+            .logo {
+                width: 120px;
+            }
+
+            .decor {
+                width: 50px;
+            }
         }
     </style>
 </head>
