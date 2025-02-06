@@ -76,35 +76,78 @@
             100% { transform: translateX(20px); }
         }
 
+        /* Decoraciones en las esquinas */
         .decor {
             position: absolute;
             width: 80px;
             opacity: 0.7;
         }
 
-        .decor-top-left { top: 20px; left: 20px; }
-        .decor-top-right { top: 20px; right: 20px; }
-        .decor-bottom-left { bottom: 20px; left: 20px; }
-        .decor-bottom-right { bottom: 20px; right: 20px; }
+        .decor-top-left {
+            top: 20px;
+            left: 20px;
+        }
 
+        .decor-top-right {
+            top: 20px;
+            right: 20px;
+        }
+
+        .decor-bottom-left {
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .decor-bottom-right {
+            bottom: 20px;
+            right: 20px;
+        }
+
+        /* Media Queries para dispositivos móviles */
         @media (max-width: 768px) {
-            h1 { font-size: 36px; }
-            .message { font-size: 18px; padding: 12px; }
-            .button { font-size: 16px; padding: 10px 20px; }
-            .logo { width: 150px; }
-            .decor { width: 60px; }
+            h1 {
+                font-size: 36px; /* Ajusta el tamaño del título */
+            }
+            .message {
+                font-size: 18px; /* Ajusta el tamaño del mensaje */
+                padding: 12px;
+            }
+            .button {
+                font-size: 16px; /* Ajusta el tamaño de los botones */
+                padding: 10px 20px;
+            }
+            .logo {
+                width: 150px; /* Ajusta el tamaño de la imagen del logo */
+            }
+            .decor {
+                width: 60px; /* Ajusta el tamaño de las decoraciones */
+            }
         }
 
         @media (max-width: 480px) {
-            h1 { font-size: 30px; }
-            .message { font-size: 16px; padding: 10px; }
-            .button { font-size: 14px; padding: 8px 18px; }
-            .logo { width: 120px; }
-            .decor { width: 50px; }
+            h1 {
+                font-size: 30px; /* Más pequeño en pantallas muy pequeñas */
+            }
+            .message {
+                font-size: 16px; /* Más pequeño en pantallas muy pequeñas */
+                padding: 10px;
+            }
+            .button {
+                font-size: 14px; /* Más pequeño en pantallas muy pequeñas */
+                padding: 8px 18px;
+            }
+            .logo {
+                width: 120px; /* Ajusta aún más el tamaño de la imagen */
+            }
+            .decor {
+                width: 50px; /* Ajusta aún más el tamaño de las decoraciones */
+            }
         }
+
     </style>
 </head>
 <body>
+    <!-- Elementos decorativos -->
     <img src="decoracion.png" class="decor decor-top-left" alt="Decoración">
     <img src="decoracion.png" class="decor decor-top-right" alt="Decoración">
     <img src="decoracion.png" class="decor decor-bottom-left" alt="Decoración">
@@ -113,6 +156,7 @@
     <h1>AIMARI</h1>
     <img src="torta-aimari.png" alt="Torta AIMARI" class="logo">
 
+    <!-- Mensaje de bienvenida -->
     <p class="message">Bienvenidos a AIMARI. Déjate sorprender con nuestros deliciosos postres y detalles únicos hechos con amor. 🎂💖</p>
 
     <div class="button-container">
